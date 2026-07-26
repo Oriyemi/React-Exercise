@@ -5,8 +5,8 @@ import Toggle from './Components/Toggle'
 function App() {
   return (
     <>
-      <Counter />
-      {/* <Toggle /> */}
+      {/* <Counter /> */}
+      <Toggle />
 
     </>
     
