@@ -16,15 +16,15 @@ function Toggle() {
     backgroundColor: "black",
     color:"white",
   }
-
+ 
 
  
   return (
-    <div>
-      <button onClick={toggleDarkMode}>
-        Toggle:{isDarkMode ? "light" : "dark"}
+    <body style={isDarkMode ? darkMode:lightMode} className='min-h-screen flex justify-center items-center '>
+      <button onClick={toggleDarkMode} className="border rounded-2xl p-4 text-2xl font-mono bg-[#00FF00] w-60 hover:bg-[#13e713]">
+        Toggle:{isDarkMode ? "dark" : "light"}
       </button>
-    </div>
+    </body>
   );
 }
 
