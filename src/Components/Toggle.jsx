@@ -21,7 +21,7 @@ function Toggle() {
  
   return (
     <body style={isDarkMode ? darkMode:lightMode} className='min-h-screen flex justify-center items-center '>
-      <button onClick={toggleDarkMode} className="border rounded-2xl p-4 text-2xl font-mono bg-[#00FF00] w-60 hover:bg-[#13e713]">
+      <button onClick={toggleDarkMode} className=" rounded-2xl p-4 text-2xl font-mono bg-[#00FF00] w-60 hover:bg-[#13e713] cursor-pointer">
         Toggle:{isDarkMode ? "dark" : "light"}
       </button>
     </body>
