@@ -1,18 +1,30 @@
 import React, {useState, useEffect} from 'react'
 // . Digital clock — useEffect with setInterval and cleanup
 function Clock() {
-  let currentDate = new Date()
-  
+  const [timer, setTimer] = useState(new Date())
+ 
+  useEffect(() => {
+    const hours = setInterval(() => {
+      setTimer(new Date())
+    }, 1000);
+
+    return () => {
+      clearInterval(hours)
+    };
+    
+  },[])
+ 
+ 
   return (
-    <div className='flex '>
-      <p>{currentDate.getHours()}:</p>
-      <p>{currentDate.getMinutes()}:</p>
-      <p>{currentDate.getSeconds()}</p>
+    <div className='flex justify-center items-center min-h-screen text-[#ffffff]'>
+      <div className='flex  items-center justify-center rounded-2xl p-4 text-4xl font-bold bg-[#1A1A1A] w-50 hover:bg-[#2C2C2C] cursor-pointer "'>
+        <p>{timer.getHours()}:</p>
+        <p>{timer.getMinutes()}:</p>
+        <p>{timer.getSeconds()}</p>
+      </div>
     </div>
   )
 } 
-setInterval(() => {
-  Clock()
-},1000)
+
 
 export default Clock
