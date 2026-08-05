@@ -9,9 +9,9 @@ function CharCounter() {
   }
   
   return (
-    <div>
-      <textarea  onChange={textValue} placeholder='character counter'></textarea>
-      <p>value:{text.length}</p>
+    <div className='flex  flex-col items-center justify-center min-h-screen '>
+      <textarea className='border-2 rounded-2xl border-gray-500 w-60 text-center pt-4'  onChange={textValue} placeholder='Enter value '></textarea>
+      <p className='font-bold text-3xl capitalize'>value:{text.length}</p>
     </div>
   )
 }

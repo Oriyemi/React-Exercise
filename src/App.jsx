@@ -3,6 +3,7 @@ import Counter from './Components/Counter';
 import Toggle from './Components/Toggle'
 import Clock from './Components/Clock';
 import CharCounter from './Components/CharCounter';
+import Todo from './Components/Todo';
 
 function App() {
   return (
@@ -10,7 +11,8 @@ function App() {
       {/* <Counter /> */}
       {/* <Toggle /> */}
       {/* <Clock /> */}
-      <CharCounter/>
+      {/* <CharCounter/> */}
+      <Todo/>
       
 
     </>
