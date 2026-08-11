@@ -40,7 +40,7 @@ function Faq() {
           {faqs.map((item, index) => (
             <div key={index} className="py-4">
               <h2
-                onClick={() => {
+                 onClick={() => {
                   handleClick(index);
                 }}
                 className="text-sm font-medium text-slate-800 cursor-pointer select-none hover:text-slate-950 transition-colors"
