@@ -4,7 +4,9 @@ import Toggle from './Components/Toggle'
 import Clock from './Components/Clock';
 import CharCounter from './Components/CharCounter';
 import Todo from './Components/Todo';
-import Tip from './Components/Tip'
+import Tip from './Components/Tip';
+import Bmi from './Components/Bmi';
+import Faq from './Components/Faq';
 
 function App() {
   return (
@@ -14,8 +16,10 @@ function App() {
       {/* <Clock /> */}
       {/* <CharCounter/> */}
       {/* <Todo /> */}
-     <Tip />
-      
+      {/* <Tip /> */}
+      {/* <Bmi /> */}
+      <Faq />
+    
 
     </>
     
