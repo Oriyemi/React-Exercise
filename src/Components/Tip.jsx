@@ -1,0 +1,1 @@
+// Tip calculator — derived values instead of extra state
