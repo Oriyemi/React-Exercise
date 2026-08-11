@@ -14,7 +14,7 @@ function App() {
       {/* <Clock /> */}
       {/* <CharCounter/> */}
       {/* <Todo /> */}
-      <Tip />
+     <Tip />
       
 
     </>
