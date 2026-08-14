@@ -7,7 +7,8 @@ import Todo from './Components/Todo';
 import Tip from './Components/Tip';
 import Bmi from './Components/Bmi';
 import Faq from './Components/Faq';
-
+import Tabcom from './Components/Tabcom';
+import StarRating from './Components/StarRating';
 function App() {
   return (
     <>
@@ -17,9 +18,10 @@ function App() {
       {/* <CharCounter/> */}
       {/* <Todo /> */}
       {/* <Tip /> */}
-      <Bmi />
+      {/* <Bmi /> */}
       {/* <Faq /> */}
-    
+      {/* <Tabcom/> */}
+      <StarRating />
 
     </>
     
