@@ -17,8 +17,8 @@ function App() {
       {/* <CharCounter/> */}
       {/* <Todo /> */}
       {/* <Tip /> */}
-      {/* <Bmi /> */}
-      <Faq />
+      <Bmi />
+      {/* <Faq /> */}
     
 
     </>
