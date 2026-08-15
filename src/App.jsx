@@ -10,6 +10,7 @@ import Faq from './Components/Faq';
 import Tabcom from './Components/Tabcom';
 import StarRating from './Components/StarRating';
 import Carousel from './Components/Carousel';
+import Modal from './Components/Modal'
 function App() {
   return (
     <>
@@ -23,7 +24,8 @@ function App() {
       {/* <Faq /> */}
       {/* <Tabcom/> */}
       {/* <StarRating /> */}
-      <Carousel />
+      {/* <Carousel /> */}
+      <Modal />
 
     </>
     
