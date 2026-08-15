@@ -12,6 +12,7 @@ import StarRating from './Components/StarRating';
 import Carousel from './Components/Carousel';
 import Modal from './Components/Modal';
 import PasswordMeter from './Components/PasswordMeter';
+import QuoteGen from './Components/QuoteGen';
 function App() {
   return (
     <>
@@ -27,7 +28,8 @@ function App() {
       {/* <StarRating /> */}
       {/* <Carousel /> */}
       {/* <Modal /> */}
-      <PasswordMeter/>
+      {/* <PasswordMeter /> */}
+      <QuoteGen/>
 
     </>
     
