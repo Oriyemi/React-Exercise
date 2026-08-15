@@ -9,6 +9,7 @@ import Bmi from './Components/Bmi';
 import Faq from './Components/Faq';
 import Tabcom from './Components/Tabcom';
 import StarRating from './Components/StarRating';
+import Carousel from './Components/Carousel';
 function App() {
   return (
     <>
@@ -21,7 +22,8 @@ function App() {
       {/* <Bmi /> */}
       {/* <Faq /> */}
       {/* <Tabcom/> */}
-      <StarRating />
+      {/* <StarRating /> */}
+      <Carousel />
 
     </>
     
