@@ -13,6 +13,7 @@ import Carousel from './Components/Carousel';
 import Modal from './Components/Modal';
 import PasswordMeter from './Components/PasswordMeter';
 import QuoteGen from './Components/QuoteGen';
+import Stopwatch from './Components/Stopwatch';
 function App() {
   return (
     <>
@@ -29,7 +30,8 @@ function App() {
       {/* <Carousel /> */}
       {/* <Modal /> */}
       {/* <PasswordMeter /> */}
-      <QuoteGen/>
+      {/* <QuoteGen /> */}
+      <Stopwatch/>
 
     </>
     
