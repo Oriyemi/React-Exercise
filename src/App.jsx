@@ -10,7 +10,8 @@ import Faq from './Components/Faq';
 import Tabcom from './Components/Tabcom';
 import StarRating from './Components/StarRating';
 import Carousel from './Components/Carousel';
-import Modal from './Components/Modal'
+import Modal from './Components/Modal';
+import PasswordMeter from './Components/PasswordMeter';
 function App() {
   return (
     <>
@@ -25,7 +26,8 @@ function App() {
       {/* <Tabcom/> */}
       {/* <StarRating /> */}
       {/* <Carousel /> */}
-      <Modal />
+      {/* <Modal /> */}
+      <PasswordMeter/>
 
     </>
     
