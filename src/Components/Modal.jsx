@@ -1,5 +1,6 @@
 // 12. Modal dialog — portals, Escape key, click-outside
 import React, { useState, useEffect } from 'react'
+import { createPortal } from 'react-dom'
 
 function Modal() {
     const [modal, setModal] = useState(false);
@@ -34,7 +35,7 @@ function Modal() {
                 Open Modal
             </button>
 
-            {modal && (
+            {modal && createPortal(
                 <div
                     onClick={handleModal}
                     className="fixed inset-0 bg-black/60 flex items-center justify-center p-4"
@@ -47,13 +48,6 @@ function Modal() {
                             <h2 className="text-2xl font-bold">
                                 My Modal
                             </h2>
-
-                            <button
-                                onClick={handleModal}
-                                className="text-gray-400 hover:text-white text-2xl"
-                            >
-                                &times;
-                            </button>
                         </div>
 
                         <p className="text-gray-400 mb-6">
@@ -69,7 +63,8 @@ function Modal() {
                             Close
                         </button>
                     </div>
-                </div>
+                </div>,
+                document.body
             )}
         </div>
     )
