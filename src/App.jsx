@@ -15,6 +15,7 @@ import PasswordMeter from './Components/PasswordMeter';
 import QuoteGen from './Components/QuoteGen';
 import Stopwatch from './Components/Stopwatch';
 import CountDownTimer from './Components/CountDownTimer';
+import WeatherApp from './Components/WeatherApp';
 function App() {
   return (
     <>
@@ -33,7 +34,8 @@ function App() {
       {/* <PasswordMeter /> */}
       {/* <QuoteGen /> */}
       {/* <Stopwatch /> */}
-      <CountDownTimer/>
+      {/* <CountDownTimer /> */}
+      <WeatherApp/>
 
     </>
     
