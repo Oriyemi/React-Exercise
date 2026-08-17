@@ -55,9 +55,9 @@ function WeatherApp() {
     getWeather(cityInput);
   };
 
- return (
-  <div className="min-h-screen bg-gray-950 flex items-center justify-center px-4">
-    <div className="w-full max-w-md rounded-2xl bg-gray-900 p-8 shadow-2xl">
+  return (
+  <div className="min-h-screen bg-slate-950 flex items-center justify-center px-4">
+    <div className="w-full max-w-md rounded-2xl bg-slate-900 p-8 shadow-2xl">
 
       <h1 className="mb-6 text-center text-3xl font-bold text-white">
         Weather App
@@ -69,19 +69,19 @@ function WeatherApp() {
           placeholder="Enter city"
           value={cityInput}
           onChange={(e) => setCityInput(e.target.value)}
-          className="flex-1 rounded-xl border border-gray-700 bg-gray-800 px-4 py-3 text-white outline-none placeholder:text-gray-400 focus:border-purple-500 focus:ring-2 focus:ring-purple-500/30"
+          className="flex-1 rounded-xl border border-slate-700 bg-slate-800 px-4 py-3 text-white outline-none placeholder:text-slate-400 focus:border-cyan-500 focus:ring-2 focus:ring-cyan-500/30"
         />
 
         <button
           onClick={handleSubmit}
-          className="rounded-xl bg-purple-600 px-5 py-3 font-semibold text-white transition hover:bg-purple-500 active:scale-95"
+          className="rounded-xl bg-cyan-600 px-5 py-3 font-semibold text-white transition hover:bg-cyan-500 active:scale-95"
         >
           Search
         </button>
       </div>
 
       {loading && (
-        <p className="mt-6 text-center text-purple-400">
+        <p className="mt-6 text-center text-cyan-400">
           Loading weather...
         </p>
       )}
@@ -93,22 +93,22 @@ function WeatherApp() {
       )}
 
       {weatherData.city && !loading && !error && (
-        <div className="mt-8 rounded-2xl border border-gray-700 bg-gray-800 p-6 text-center">
+        <div className="mt-8 rounded-2xl border border-slate-700 bg-slate-800 p-6 text-center">
 
           <p className="text-2xl font-bold capitalize text-white">
             {weatherData.city}
           </p>
 
-          <p className="mt-4 text-5xl font-bold text-purple-400">
+          <p className="mt-4 text-5xl font-bold text-cyan-400">
             {weatherData.temp}°C
           </p>
 
-          <p className="mt-3 text-lg capitalize text-gray-300">
+          <p className="mt-3 text-lg capitalize text-slate-300">
             {weatherData.condition}
           </p>
 
-          <div className="mt-6 border-t border-gray-700 pt-5">
-            <p className="text-gray-400">
+          <div className="mt-6 border-t border-slate-700 pt-5">
+            <p className="text-slate-400">
               Humidity
             </p>
 
