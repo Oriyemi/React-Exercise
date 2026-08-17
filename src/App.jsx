@@ -14,6 +14,7 @@ import Modal from './Components/Modal';
 import PasswordMeter from './Components/PasswordMeter';
 import QuoteGen from './Components/QuoteGen';
 import Stopwatch from './Components/Stopwatch';
+import CountDownTimer from './Components/CountDownTimer';
 function App() {
   return (
     <>
@@ -31,7 +32,8 @@ function App() {
       {/* <Modal /> */}
       {/* <PasswordMeter /> */}
       {/* <QuoteGen /> */}
-      <Stopwatch/>
+      {/* <Stopwatch /> */}
+      <CountDownTimer/>
 
     </>
     
