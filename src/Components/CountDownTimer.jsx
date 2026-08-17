@@ -4,8 +4,22 @@ import React, { useState, useEffect} from 'react'
 function CountDownTimer() {
     const countDown = () => {
         const currentDate = new Date();
-        const difference = targetDate - currentDate
-        
+        const difference = targetDate - currentDate;
+        const totalSeconds = Math.floor(difference / 1000);
+        const minutesRemaing = Math.floor(totalSeconds / 60);
+        const secondsRemaining = totalSeconds % 60;
+        const hours = Math.floor(minutesRemaing / 60);
+        const minutesLeft = minutesRemaing % 60;
+        const days = Math.floor(hours / 24);
+        const hoursRemaining = hours % 24;
+        setTimeLeft(
+            {
+        days: days,
+        hours: hoursRemaining,
+        minutes: minutesLeft,
+        seconds:secondsRemaining,
+    }
+        )
     };
     const targetDate = new Date("January 1, 2027 00:00:00");
 
@@ -17,12 +31,13 @@ function CountDownTimer() {
     });
 
     useEffect(() => {
+        countDown();
         const interval = setInterval(() => {
-          
+            countDown();
         }, 1000);
         
         return () => {
-            clearInterval()
+            clearInterval(interval)
         };
 
     },[])
