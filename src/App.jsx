@@ -16,6 +16,7 @@ import QuoteGen from './Components/QuoteGen';
 import Stopwatch from './Components/Stopwatch';
 import CountDownTimer from './Components/CountDownTimer';
 import WeatherApp from './Components/WeatherApp';
+import Profiler from './Components/Profiler';
 function App() {
   return (
     <>
@@ -35,7 +36,9 @@ function App() {
       {/* <QuoteGen /> */}
       {/* <Stopwatch /> */}
       {/* <CountDownTimer /> */}
-      <WeatherApp/>
+      {/* <WeatherApp /> */}
+      <Profiler/>   
+      
 
     </>
     
