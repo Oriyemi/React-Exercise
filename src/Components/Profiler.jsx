@@ -92,21 +92,21 @@ function Profiler() {
             </p>
 
             <div className="mt-6 grid grid-cols-3 gap-3">
-              <div className="rounded-xl bg-green-700 p-3">
+              <div className="rounded-xl bg-blue-400 p-3">
                 <p className="text-sm text-slate-900">Repos</p>
                 <p className="mt-1 text-lg font-bold text-white">
                   {profile.public_repos}
                 </p>
               </div>
 
-              <div className="rounded-xl bg-green-700 p-3">
+              <div className="rounded-xl bg-blue-400 p-3">
                 <p className="text-sm text-slate-900">Followers</p>
                 <p className="mt-1 text-lg font-bold text-white">
                   {profile.followers}
                 </p>
               </div>
 
-              <div className="rounded-xl bg-green-700 p-3">
+              <div className="rounded-xl bg-blue-400 p-3">
                 <p className="text-sm text-slate-900">Following</p>
                 <p className="mt-1 text-lg font-bold text-white">
                   {profile.following}
@@ -118,7 +118,7 @@ function Profiler() {
               href={profile.html_url}
               target="_blank"
               rel="noreferrer"
-              className="mt-6 inline-block rounded-xl bg-green-600 px-6 py-3 font-semibold text-white hover:bg-green-500"
+              className="mt-6 inline-block rounded-xl bg-green-500 px-6 py-3 font-semibold text-white hover:bg-green-500"
             >
               View GitHub Profile
             </a>

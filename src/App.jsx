@@ -17,6 +17,7 @@ import Stopwatch from './Components/Stopwatch';
 import CountDownTimer from './Components/CountDownTimer';
 import WeatherApp from './Components/WeatherApp';
 import Profiler from './Components/Profiler';
+import RecipeSearch from './Components/RecipeSearch';
 function App() {
   return (
     <>
@@ -37,7 +38,8 @@ function App() {
       {/* <Stopwatch /> */}
       {/* <CountDownTimer /> */}
       {/* <WeatherApp /> */}
-      <Profiler/>   
+      {/* <Profiler />   */}
+      <RecipeSearch/>
       
 
     </>
