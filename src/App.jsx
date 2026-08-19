@@ -18,6 +18,7 @@ import CountDownTimer from './Components/CountDownTimer';
 import WeatherApp from './Components/WeatherApp';
 import Profiler from './Components/Profiler';
 import RecipeSearch from './Components/RecipeSearch';
+import MovieDb from './Components/MovieDb';
 function App() {
   return (
     <>
@@ -39,7 +40,8 @@ function App() {
       {/* <CountDownTimer /> */}
       {/* <WeatherApp /> */}
       {/* <Profiler />   */}
-      <RecipeSearch/>
+      {/* <RecipeSearch /> */}
+      <MovieDb/>
       
 
     </>
