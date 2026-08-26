@@ -22,6 +22,7 @@ import MovieDb from './Components/MovieDb';
 import Converter from './Components/Converter';
 import Scroll from './Components/Scroll';
 import AutoCom from './Components/AutoCom';
+import NewsReader from './Components/NewsReader';
 function App() {
   return (
     <>
@@ -47,7 +48,8 @@ function App() {
       {/* <MovieDb /> */}
       {/* <Converter/> */}
       {/* <Scroll /> */}
-      <AutoCom/>
+      {/* <AutoCom /> */}
+      <NewsReader/>
       
 
     </>
