@@ -19,7 +19,8 @@ import WeatherApp from './Components/WeatherApp';
 import Profiler from './Components/Profiler';
 import RecipeSearch from './Components/RecipeSearch';
 import MovieDb from './Components/MovieDb';
-import Converter from './Components/Converter'
+import Converter from './Components/Converter';
+import Scroll from './Components/Scroll';
 function App() {
   return (
     <>
@@ -43,7 +44,8 @@ function App() {
       {/* <Profiler />   */}
       {/* <RecipeSearch /> */}
       {/* <MovieDb /> */}
-      <Converter/>
+      {/* <Converter/> */}
+      <Scroll/>
       
 
     </>
