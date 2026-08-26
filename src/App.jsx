@@ -21,6 +21,7 @@ import RecipeSearch from './Components/RecipeSearch';
 import MovieDb from './Components/MovieDb';
 import Converter from './Components/Converter';
 import Scroll from './Components/Scroll';
+import AutoCom from './Components/AutoCom';
 function App() {
   return (
     <>
@@ -45,7 +46,8 @@ function App() {
       {/* <RecipeSearch /> */}
       {/* <MovieDb /> */}
       {/* <Converter/> */}
-      <Scroll/>
+      {/* <Scroll /> */}
+      <AutoCom/>
       
 
     </>

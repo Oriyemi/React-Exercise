@@ -10,7 +10,7 @@ function Scroll() {
 
   const observerRef = useRef(null);
 
-  // Fetch posts whenever currentPage changes
+ 
   useEffect(() => {
     const scrollFeed = async () => {
       setLoading(true);
