@@ -34,7 +34,7 @@ function Crypto() {
       fetchPrice();
 
    
-      const polling = setInterval(fetchPrice, 5000);
+      const polling = setInterval(fetchPrice, 30000);
       
     return () => {
       clearInterval(polling);
