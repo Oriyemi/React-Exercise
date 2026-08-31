@@ -20,7 +20,8 @@ function NewsReader() {
           "health",
         ];
 
-        const responses = await Promise.all(
+          const responses = await Promise.all(
+            // here we are going through every catergory and fetching the api one by one with the map there also we used promise because instead for us to "Start all these requests and wait until all of them finish.
           categories.map((currentCategory) =>
             fetch(
               `https://newsapi.org/v2/top-headlines?country=us&category=${currentCategory}&apiKey=${import.meta.env.VITE_NEWS_API_KEY}`
@@ -70,7 +71,7 @@ function NewsReader() {
           News Reader
         </h1>
 
-        {/* Category buttons */}
+       
         <div className="flex flex-wrap justify-center gap-3 mb-10">
 
           <button
