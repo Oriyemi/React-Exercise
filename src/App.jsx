@@ -26,6 +26,7 @@ import NewsReader from './Components/NewsReader';
 import Crypto from './Components/Crypto';
 import ImageGallery from './Components/ImageGallery';
 import CountryExp from './Components/CountryExp';
+import FormWizard from './Components/FormWizard';
 function App() {
   return (
     <>
@@ -55,8 +56,8 @@ function App() {
       {/* <NewsReader /> */}
       {/* <Crypto /> */}
       {/* <ImageGallery/> */}
-      <CountryExp/>
-      
+      {/* <CountryExp/> */}
+      <FormWizard/>
 
     </>
     

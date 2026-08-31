@@ -1,7 +1,5 @@
 // 26. Crypto price tracker with polling
 
-
-
 import React, { useState, useEffect } from "react";
 
 function Crypto() {
