@@ -2,7 +2,7 @@ import React from "react";
 import { useParams, Link } from "react-router-dom";
 
 function BlogPost() {
-  const { slug } = useParams();
+  const { id } = useParams();
 
   const blogs = [
     { 
@@ -25,7 +25,7 @@ function BlogPost() {
     },
   ];
 
-  const blog = blogs.find((blog) => blog.slug === slug);
+  const blog = blogs.find((blog) => blog.id === id);
 
   if (!blog) {
     return (

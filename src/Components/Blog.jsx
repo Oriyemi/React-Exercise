@@ -26,9 +26,9 @@ function Blog() {
       <h1>Blog</h1>
 
       {blogs.map((blog) => (
-        <div key={blog.slug}>
+        <div key={blog.id}>
           <h2>
-            <Link to={`/blog/${blog.slug}`}>
+            <Link to={`/blog/${blog.id}`}>
               {/* When person click this particular blog, carry them go that blog's page. */}
               {blog.title}
             </Link>
