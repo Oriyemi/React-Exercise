@@ -31,8 +31,7 @@ import Home from "./Components/Home";
 // import CountryExp from "./Components/CountryExp";
 // import FormWizard from "./Components/FormWizard";
 // import Blog from "./Components/Blog";
-import themeswitcher from "./Components/Question-31";
-
+import ShoppingCart32 from "./Components/ShoppingCart32.jsx"
 function App() {
   return (
     <>
@@ -65,7 +64,8 @@ function App() {
       {/* <CountryExp/> */}
       {/* <FormWizard /> */}
       {/* <ShoopingCart/> */}
-      <Question-31/>
+      <Question-31 />
+      <ShoppingCart32/>
     </>
   );
 }
