@@ -1,4 +1,3 @@
-
 import React, { useReducer, useState } from "react";
 
 const initialState = {
@@ -21,7 +20,7 @@ function reducer(state, action) {
               ...product,
               quantity: product.quantity + 1,
             }
-          : product
+          : product,
       ),
     };
   }
@@ -35,7 +34,7 @@ function reducer(state, action) {
               ...product,
               quantity: product.quantity - 1,
             }
-          : product
+          : product,
       ),
     };
   }
@@ -48,40 +47,35 @@ function ShoppingCart32() {
 
   const [showCart, setShowCart] = useState(false);
 
-  const cartItems = state.cart.filter(
-    (product) => product.quantity > 0
+  const cartItems = state.cart.filter((product) => product.quantity > 0);
+  const cartCount = state.cart.reduce(
+    (total, product) => total + product.quantity,
+    0,
   );
 
   const total = state.cart.reduce(
-    (accumulator, product) =>
-      accumulator + product.price * product.quantity,
-    0
+    (accumulator, product) => accumulator + product.price * product.quantity,
+    0,
   );
 
   return (
     <div className="min-h-screen bg-gray-50">
-
       {/* Header */}
       <header className="bg-white border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
-
-          <h1 className="text-2xl font-bold text-gray-900">
-            Glow Store
-          </h1>
+          <h1 className="text-2xl font-bold text-gray-900">Glow Store</h1>
 
           <button
             type="button"
             onClick={() => setShowCart((previous) => !previous)}
             className="bg-gray-900 text-white px-5 py-3 rounded-xl font-medium hover:bg-gray-800 transition"
           >
-            🛒 View Cart ({cartItems.length})
+            🛒 View Cart ({cartCount})
           </button>
-
         </div>
       </header>
 
       <main className="max-w-7xl mx-auto px-6 py-10">
-
         {/* Products Heading */}
         <div className="mb-8">
           <p className="text-sm font-semibold text-purple-600 uppercase tracking-wide">
@@ -99,21 +93,16 @@ function ShoppingCart32() {
 
         {/* Products */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
-
           {state.cart.map((product) => (
             <div
               key={product.name}
               className="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition"
             >
-
               <div className="h-44 bg-gray-100 flex items-center justify-center">
-                <span className="text-6xl">
-                  🧴
-                </span>
+                <span className="text-6xl">🧴</span>
               </div>
 
               <div className="p-5">
-
                 <h3 className="text-lg font-semibold text-gray-900">
                   {product.name}
                 </h3>
@@ -123,7 +112,6 @@ function ShoppingCart32() {
                 </p>
 
                 {product.quantity === 0 ? (
-
                   <button
                     type="button"
                     onClick={() =>
@@ -136,11 +124,8 @@ function ShoppingCart32() {
                   >
                     Add to Cart
                   </button>
-
                 ) : (
-
                   <div className="flex items-center justify-between mt-5 bg-gray-100 rounded-xl p-1">
-
                     <button
                       type="button"
                       onClick={() =>
@@ -154,9 +139,7 @@ function ShoppingCart32() {
                       −
                     </button>
 
-                    <span className="font-bold">
-                      {product.quantity}
-                    </span>
+                    <span className="font-bold">{product.quantity}</span>
 
                     <button
                       type="button"
@@ -170,21 +153,16 @@ function ShoppingCart32() {
                     >
                       +
                     </button>
-
                   </div>
-
                 )}
-
               </div>
             </div>
           ))}
-
         </div>
 
         {/* VIEW CART BUTTON */}
 
         <div className="mt-12 text-center">
-
           <button
             type="button"
             onClick={() => setShowCart((previous) => !previous)}
@@ -192,19 +170,14 @@ function ShoppingCart32() {
           >
             {showCart ? "Hide Cart" : "View Cart"}
           </button>
-
         </div>
 
         {/* CART */}
 
         {showCart && (
-
           <section className="mt-12">
-
             <div className="mb-6">
-              <h2 className="text-3xl font-bold text-gray-900">
-                My Cart
-              </h2>
+              <h2 className="text-3xl font-bold text-gray-900">My Cart</h2>
 
               <p className="text-gray-500 mt-1">
                 Review the products you have selected.
@@ -212,12 +185,8 @@ function ShoppingCart32() {
             </div>
 
             {cartItems.length === 0 ? (
-
               <div className="bg-white border border-gray-200 rounded-2xl p-10 text-center">
-
-                <div className="text-5xl mb-4">
-                  🛒
-                </div>
+                <div className="text-5xl mb-4">🛒</div>
 
                 <h3 className="text-xl font-semibold text-gray-900">
                   Your cart is empty
@@ -226,35 +195,26 @@ function ShoppingCart32() {
                 <p className="text-gray-500 mt-2">
                   Add some products before viewing your cart.
                 </p>
-
               </div>
-
             ) : (
-
               <div className="bg-white border border-gray-200 rounded-2xl overflow-hidden">
-
                 {cartItems.map((product) => (
-
                   <div
                     key={product.name}
                     className="p-6 border-b border-gray-100 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-5"
                   >
-
                     <div>
                       <h3 className="text-lg font-semibold text-gray-900">
                         {product.name}
                       </h3>
 
                       <p className="text-gray-500 mt-1">
-                        ₦{product.price.toLocaleString()} ×{" "}
-                        {product.quantity}
+                        ₦{product.price.toLocaleString()} × {product.quantity}
                       </p>
                     </div>
 
                     <div className="flex items-center gap-6">
-
                       <div className="flex items-center gap-3 bg-gray-100 rounded-lg p-1">
-
                         <button
                           type="button"
                           onClick={() =>
@@ -284,30 +244,20 @@ function ShoppingCart32() {
                         >
                           +
                         </button>
-
                       </div>
 
                       <p className="font-bold text-gray-900">
-                        ₦
-                        {(
-                          product.price * product.quantity
-                        ).toLocaleString()}
+                        ₦{(product.price * product.quantity).toLocaleString()}
                       </p>
-
                     </div>
-
                   </div>
-
                 ))}
 
                 {/* Cart Total */}
 
                 <div className="p-6 bg-gray-50 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
-
                   <div>
-                    <p className="text-sm text-gray-500">
-                      Cart Total
-                    </p>
+                    <p className="text-sm text-gray-500">Cart Total</p>
 
                     <h3 className="text-3xl font-bold text-gray-900">
                       ₦{total.toLocaleString()}
@@ -320,21 +270,14 @@ function ShoppingCart32() {
                   >
                     Checkout
                   </button>
-
                 </div>
-
               </div>
-
             )}
-
           </section>
-
         )}
-
       </main>
     </div>
   );
 }
 
 export default ShoppingCart32;
-
