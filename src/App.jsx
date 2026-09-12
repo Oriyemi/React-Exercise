@@ -37,6 +37,7 @@ import FetchUsers from "./Components/FetchUsers.jsx";
 import Responsive from "./Components/Responsive.jsx";
 import Pagination from "./Components/Pagination.jsx";
 import UserPagination from "./Components/UserPagination.jsx";
+import FormTest from "./Components/FormTest.jsx";
 
 function App() {
   return (
@@ -75,7 +76,8 @@ function App() {
       {/* <DebounceSearch /> */}
       {/* <FetchUsers /> */}
       {/* <Responsive /> */}
-      <UserPagination/>
+      {/* <UserPagination /> */}
+      <FormTest/>
     
     </>
   );

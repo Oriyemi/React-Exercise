@@ -19,7 +19,7 @@ function UserPagination() {
 
   const usersPerPage = 2;
 
-  const totalPages = 5;
+ const totalPages = Math.ceil(users.length / usersPerPage);
 
   const startIndex = (currentPage - 1) * usersPerPage;
 
