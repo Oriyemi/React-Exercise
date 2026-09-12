@@ -35,6 +35,8 @@ import ShoppingCart32 from "./Components/ShoppingCart32.jsx"
 import DebounceSearch from "./Components/DebounceSearch.jsx.jsx";
 import FetchUsers from "./Components/FetchUsers.jsx";
 import Responsive from "./Components/Responsive.jsx";
+import Pagination from "./Components/Pagination.jsx";
+import UserPagination from "./Components/UserPagination.jsx";
 
 function App() {
   return (
@@ -71,8 +73,10 @@ function App() {
       {/* <Question-31 />
       <ShoppingCart32 /> */}
       {/* <DebounceSearch /> */}
-      <FetchUsers />
-      <Responsive/>
+      {/* <FetchUsers /> */}
+      {/* <Responsive /> */}
+      <UserPagination/>
+    
     </>
   );
 }
