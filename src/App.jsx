@@ -32,6 +32,10 @@ import Home from "./Components/Home";
 // import FormWizard from "./Components/FormWizard";
 // import Blog from "./Components/Blog";
 import ShoppingCart32 from "./Components/ShoppingCart32.jsx"
+import DebounceSearch from "./Components/DebounceSearch.jsx.jsx";
+import FetchUsers from "./Components/FetchUsers.jsx";
+import Responsive from "./Components/Responsive.jsx";
+
 function App() {
   return (
     <>
@@ -64,8 +68,11 @@ function App() {
       {/* <CountryExp/> */}
       {/* <FormWizard /> */}
       {/* <ShoopingCart/> */}
-      <Question-31 />
-      <ShoppingCart32/>
+      {/* <Question-31 />
+      <ShoppingCart32 /> */}
+      {/* <DebounceSearch /> */}
+      <FetchUsers />
+      <Responsive/>
     </>
   );
 }

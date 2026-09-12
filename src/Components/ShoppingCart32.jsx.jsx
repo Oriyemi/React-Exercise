@@ -1,4 +1,5 @@
-import React, { useReducer, useState } from "react";
+//  . Shopping cart — useReducer for complex updates 
+ import React, { useReducer, useState } from "react";
 
 const initialState = {
   cart: [
