@@ -39,6 +39,16 @@ import Pagination from "./Components/Pagination.jsx";
 import UserPagination from "./Components/UserPagination.jsx";
 import FormTest from "./Components/FormTest.jsx";
 import Toast from "./Components/Toast.jsx";
+import Kanban from "./Components/Kanban.jsx";
+import MarkdownEditor from "./Components/Markdown.jsx";
+import NotesApp from "./Components/NoteApp.jsx";
+import ExpenseTracker from "./Components/ExpenseTracker.jsx";
+import HabitTracker from "./Components/HabitTracker.jsx";
+import QuizApp from "./Components/QuizTimerApp.jsx";
+import ChatApp from "./Components/ChatApp.jsx";
+import DataTable from "./Components/DataTable.jsx";
+import CalendarApp from "./Components/CalendarRecurrence.jsx";
+import AnalyticsDashboard from "./Components/AnalyticsDashboard.jsx";
 
 function App() {
   return (
@@ -79,7 +89,17 @@ function App() {
       {/* <Responsive /> */}
       {/* <UserPagination /> */}
       {/* <FormTest /> */}
-      <Toast/>
+      {/* <Toast /> */}
+      {/* <Kanban /> */}
+      {/* <MarkdownEditor/> */}
+      {/* <NotesApp /> */}
+      {/* <ExpenseTracker /> */}
+      {/* <HabitTracker /> */}
+      {/* <QuizApp /> */}
+      {/* <ChatApp /> */}
+      {/* <DataTable /> */}
+      {/* <CalendarApp /> */}
+      <AnalyticsDashboard/>
     
     </>
   );
