@@ -90,16 +90,16 @@ function App() {
       {/* <UserPagination /> */}
       {/* <FormTest /> */}
       {/* <Toast /> */}
-      {/* <Kanban /> */}
-      {/* <MarkdownEditor/> */}
-      {/* <NotesApp /> */}
-      {/* <ExpenseTracker /> */}
-      {/* <HabitTracker /> */}
-      {/* <QuizApp /> */}
-      {/* <ChatApp /> */}
+      {/* <Kanban />
+      <MarkdownEditor/>
+      <NotesApp />
+      <ExpenseTracker />
+      <HabitTracker /> */}
+      {/* <QuizApp />
+      <ChatApp /> */}
       {/* <DataTable /> */}
       {/* <CalendarApp /> */}
-      <AnalyticsDashboard/>
+      {/* <AnalyticsDashboard/> */}
     
     </>
   );
