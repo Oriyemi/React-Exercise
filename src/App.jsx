@@ -2,70 +2,70 @@ import { useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import Home from "./Components/Home";
 
-import Counter from "./Components/Counter";
-import Toggle from "./Components/Toggle";
-import Clock from "./Components/Clock";
-import CharCounter from "./Components/CharCounter";
-import Todo from "./Components/Todo";
-import Tip from "./Components/Tip";
-import Bmi from "./Components/Bmi";
-import Faq from "./Components/Faq";
-import Tabcom from "./Components/Tabcom";
-import StarRating from "./Components/StarRating";
-import Carousel from "./Components/Carousel";
-import Modal from "./Components/Modal";
-import PasswordMeter from "./Components/PasswordMeter";
-import QuoteGen from "./Components/QuoteGen";
-import Stopwatch from "./Components/Stopwatch";
-import CountDownTimer from "./Components/CountDownTimer";
-import WeatherApp from "./Components/WeatherApp";
-import Profiler from "./Components/Profiler";
-import RecipeSearch from "./Components/RecipeSearch";
-import MovieDb from "./Components/MovieDb";
-import Converter from "./Components/Converter";
-import Scroll from "./Components/Scroll";
-import AutoCom from "./Components/AutoCom";
-import NewsReader from "./Components/NewsReader";
-import Crypto from "./Components/Crypto";
-import ImageGallery from "./Components/ImageGallery";
-import CountryExp from "./Components/CountryExp";
-import FormWizard from "./Components/FormWizard";
-import Blog from "./Components/Blog";
-import ShoppingCart32 from "./Components/ShoppingCart32.jsx"
+import Counter from "./Components/Question1.jsx";
+import Toggle from "./Components/Question2.jsx";
+import Clock from "./Components/Question3.jsx";
+import CharCounter from "./Components/Question4.jsx";
+import Todo from "./Components/Question5.jsx";
+import Tip from "./Components/Question6.jsx";
+import Bmi from "./Components/Question7.jsx";
+import Faq from "./Components/Question8.jsx";
+import Tabcom from "./Components/Question9.jsx";
+import StarRating from "./Components/Question10.jsx";
+import Carousel from "./Components/Question11.jsx";
+import Modal from "./Components/Question12.jsx";
+import PasswordMeter from "./Components/Question13.jsx";
+import QuoteGen from "./Components/Question14.jsx";
+import Stopwatch from "./Components/Question15.jsx";
+import CountDownTimer from "./Components/Question16.jsx";
+import WeatherApp from "./Components/Question17.jsx";
+import Profiler from "./Components/Question18.jsx";
+import RecipeSearch from "./Components/Question19.jsx";
+import MovieDb from "./Components/Question20.jsx";
+import Converter from "./Components/Question22.jsx";
+import Scroll from "./Components/Question23.jsx";
+import AutoCom from "./Components/Question24.jsx";
+import NewsReader from "./Components/Question25.jsx";
+import Crypto from "./Components/Question26.jsx";
+import ImageGallery from "./Components/Question27.jsx";
+import CountryExp from "./Components/Question28.jsx";
+import FormWizard from "./Components/Question29.jsx";
+import Blog from "./Components/Blog.jsx";
+import ShoppingCart32 from "./Components/Question32.jsx"
 import DebounceSearch from "./Components/DebounceSearch.jsx.jsx";
 import FetchUsers from "./Components/FetchUsers.jsx";
 import Responsive from "./Components/Responsive.jsx";
-import Pagination from "./Components/Pagination.jsx";
-import UserPagination from "./Components/UserPagination.jsx";
-import FormTest from "./Components/FormTest.jsx";
+import Pagination from "./Components/Question34B.jsx";
+import UserPagination from "./Components/Question34A.jsx";
+import FormTest from "./Components/Question35.jsx";
 import Toast from "./Components/Toast.jsx";
-import Kanban from "./Components/Kanban.jsx";
-import MarkdownEditor from "./Components/Markdown.jsx";
-import NotesApp from "./Components/NoteApp.jsx";
-import ExpenseTracker from "./Components/ExpenseTracker.jsx";
-import HabitTracker from "./Components/HabitTracker.jsx";
-import QuizApp from "./Components/QuizTimerApp.jsx";
-import ChatApp from "./Components/ChatApp.jsx";
-import DataTable from "./Components/DataTable.jsx";
-import CalendarApp from "./Components/CalendarRecurrence.jsx";
-import AnalyticsDashboard from "./Components/AnalyticsDashboard.jsx";
+import Kanban from "./Components/Question39.jsx";
+import MarkdownEditor from "./Components/Question40.jsx";
+import NotesApp from "./Components/Question41.jsx";
+import ExpenseTracker from "./Components/Question42.jsx";
+import HabitTracker from "./Components/Question43.jsx";
+import QuizApp from "./Components/Question44.jsx";
+import ChatApp from "./Components/Question45.jsx";
+import DataTable from "./Components/Question47.jsx";
+import CalendarApp from "./Components/Question48.jsx";
+import AnalyticsDashboard from "./Components/Question49.jsx";
 
 function App() {
   return (
     <>
       <Counter />
-      {/* <Toggle /> */}
-      {/* <Clock /> */}
-      {/* <CharCounter/> */}
-      {/* <Todo /> */}
-      {/* <Tip /> */}
-      {/* <Bmi /> */}
-      {/* <Faq /> */}
-      {/* <Tabcom/> */}
-      {/* <StarRating /> */}
-      {/* <Carousel /> */}
-      {/* <Modal /> */}
-      {/* <PasswordMeter /> */}
+      <Toggle />
+      <Clock /> 
+      <CharCounter/>
+      <Todo />
+      <Tip />
+      <Bmi />
+      <Faq />
+       <Tabcom/>
+      <StarRating />
+      <Carousel />
+      <Modal /> 
+      <PasswordMeter />
       {/* <QuoteGen /> */}
       {/* <Stopwatch /> */}
       {/* <CountDownTimer /> */}
@@ -73,7 +73,7 @@ function App() {
       {/* <Profiler />   */}
       {/* <RecipeSearch /> */}
       {/* <MovieDb /> */}
-      {/* <Converter/> */}
+      {/* <Converter/>
       {/* <Scroll /> */}
       {/* <AutoCom /> */}
       {/* <NewsReader /> */}
@@ -81,25 +81,25 @@ function App() {
       {/* <ImageGallery/> */}
       {/* <CountryExp/> */}
       {/* <FormWizard /> */}
-      {/* <ShoopingCart/> */}
-      {/* <Question-31 />
-      <ShoppingCart32 /> */}
+      
+      <Question-31 />
+      <ShoppingCart32 />
       {/* <DebounceSearch /> */}
       {/* <FetchUsers /> */}
       {/* <Responsive /> */}
-      {/* <UserPagination /> */}
-      {/* <FormTest /> */}
-      {/* <Toast /> */}
-      {/* <Kanban />
+      <UserPagination />
+      <FormTest />
+      <Toast /> 
+      <Kanban />
       <MarkdownEditor/>
       <NotesApp />
       <ExpenseTracker />
-      <HabitTracker /> */}
-      {/* <QuizApp />
-      <ChatApp /> */}
-      {/* <DataTable /> 
+      <HabitTracker />
+      <QuizApp />
+      <ChatApp />
+     <DataTable /> 
       <CalendarApp />
-       <AnalyticsDashboard/> */}
+       <AnalyticsDashboard/>
     
     </>
   );
@@ -113,8 +113,8 @@ export default App;
 // import { Route, Routes } from "react-router-dom";
 // import Home from "./Components/Home";
 // import About from "./Components/About";
-// import Blog from "./Components/Blog";
-// import BlogPost from "./Components/BlogPost";
+// import Blog from "./Components/Blog.jsx";
+// import BlogPost from "./Components/BlogPost.jsx";
 
 // function App() {
 //   return (
@@ -124,7 +124,7 @@ export default App;
 //         <Route path="/about" element={<About />} />
 //         <Route path="/blog" element={<Blog />} />
 //         <Route path="/blog/:id" element={<BlogPost />} />
-//       </Route>
+//        </Route>
 //     </Routes>
 //   );
 // }

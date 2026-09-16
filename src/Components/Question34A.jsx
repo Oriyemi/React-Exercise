@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Pagination from "./Pagination";
+import Pagination from "./Question34B";
 
 function UserPagination() {
   const [currentPage, setCurrentPage] = useState(1);
