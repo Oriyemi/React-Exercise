@@ -4,7 +4,7 @@ import React from 'react'
 
 function Question21() {
   return (
-    <div>Question21</div>
+    <div>Pokedex App</div>
   )
 }
 
